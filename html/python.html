@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="with=device-width", initial-scale="1.0">
+        <title>Presentation</title>
+        <link rel="stylesheet" href="style.css">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <link rel="stylesheet" href="style.css">
+        <style>
+        .mySlides {display:none;}
+        </style>
+
+    </head>
+    <body>
+            <section class="subheader1">
+                <nav>
+                    <a href="index.html" ><img src="image/logo1.png"></a>
+                    <div class="navlink">
+                        <ul>
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="python.html">PYTHON</a></li>
+                            <li> <a href="ui&ux.html">UI&UX </a></li>
+                            <li> <a href="act.html">ACTIVITIES</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+                <div class="textbox">
+                    <h1>PYTHON</h1>
+                    <p> PYTHON - The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+                </div>
+            </section>
+            <!--- PYTHON ACTIVITIES   -->
+           
+            <section class="imageslider">
+                <h2 class="w3-center">Automatic Slideshow</h2>
+                <p> Activities made by the Team members</p>
+
+            <div class="sld" style="max-width:1000px" >
+                <centre>
+                <img class="mySlides" src="image/pi1.png" style="width:100%">
+                <img class="mySlides" src="image/pi2.png" style="width:100%">
+                <img class="mySlides" src="image/pi3.png" style="width:100%">
+                <img class="mySlides" src="image/pi4.png" style="width:100%">
+                <img class="mySlides" src="image/pi5.png" style="width:100%">
+            </centre>
+            </div>
+
+            <script>
+                var myIndex = 0;
+                    carousel();
+
+                function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) 
+                        {
+                         x[i].style.display = "none";  
+                            }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); // Change image every 2 seconds//
+                }
+                    </script>
+                </section>
+                 <!--- about the python context -->
+                
+                 <section class="pythcont">
+                    <div class="row">
+                        <div class="pcol">
+                            
+                            <h3> Python - Turtle and file handling</h2>
+                            <p>Turtle graphics are often associated with the Logo programming language.Seymour Papert added support for turtle graphics to Logo in the late 1960s to support his version of the turtle robot, a simple robot controlled from the user's workstation that is designed to carry out the drawing functions assigned to it using a small retractable pen set into or attached to the robot's body. Turtle geometry works somewhat differently from (x,y) addressed Cartesian geometry, being primarily vector-based (i.e. relative direction and distance from a starting point) in comparison to coordinate-addressed systems such as bitmaps or raster graphics. As a practical matter, the use of turtle geometry instead of a more traditional model mimics the actual movement logic of the turtle robot. The turtle is traditionally and most often represented pictorially either as a triangle or a turtle icon (though it can be represented by any icon).</p>
+                       
+                        </div>
+
+                    </div> 
+
+
+
+
+
+                </section>
+
+
+                <!--FOOTER-->
+                <section class="footer">
+                    <h4> About US</h4>
+                    <p> Team 4 website presentation</p>
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <p>Made by<i class="fa fa-heart-o"></i> team 3 </p> 
+                </section>
+               
+    </body>
+</html>

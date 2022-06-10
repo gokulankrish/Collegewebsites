@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="with=device-width", initial-scale="1.0">
+        <title>Presentation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <section class="subheader2">
+                <nav>
+                    <a href="index.html" ><img src="image/logo1.png"></a>
+                    <div class="navlink">
+                        <ul>
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="python.html">PYTHON</a></li>
+                            <li> <a href="ui&ux.html">UI&UX </a></li>
+                            <li> <a href="act.html">ACTIVITIES</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="textbox">
+                    <h1>UI&UX</h1>
+                    <p> User interface (UI) design refers to the aesthetic elements by which people interact with a product, such as buttons, icons, menu bars, typography, colors, and more.<br> User experience (UX) design refers to the experience a user has when interacting with a product.</p>
+                </div>
+            </section>
+            <!--- PYTHON ACTIVITIES   -->
+           
+            <section class="imageslider">
+                <h2 class="w3-center">Automatic Slideshow</h2>
+                <p> Activities made by the Team members</p>
+
+            <div class="sld" style="max-width:1000px" >
+                <centre>
+                <img class="mySlides" src="image/b1.jpg" style="width:100%">
+                <img class="mySlides" src="image/b2.jpg" style="width:100%">
+                <img class="mySlides" src="image/b3.jpg" style="width:100%">
+                <img class="mySlides" src="image/b4.jpg" style="width:100%">
+               
+            </centre>
+            </div>
+
+            <script>
+                var myIndex = 0;
+                    carousel();
+
+                function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) 
+                        {
+                         x[i].style.display = "none";  
+                            }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); // Change image every 2 seconds//
+                }
+                    </script>
+                </section>
+                 <!--- about the python context -->
+                
+                 <section class="pythcont">
+                    <div class="row">
+                        <div class="pcol">
+                            
+                            <h3> UI & UX design and Activities </h2>
+                            <p>User experience design (UX design, UXD, UED, or XD) is the process of creating evidence-based, interaction designs between human users and products or websites. Design decisions in UX design are driven by research, data analysis, and test results rather than aesthetic preferences and opinions. Unlike user interface design, which focuses solely on the design of a computer interface, UX design encompasses all aspects of a user's perceived experience with a product or website, such as its usability, usefulness, desirability, brand perception, and overall performance. UX design is also an element of the customer experience (CX), which encompasses all aspects and stages of a customer's experience and interaction with a company.</p>
+                       
+                        </div>
+
+                    </div> 
+
+
+
+
+
+                </section>
+
+                <!--FOOTER-->
+                <section class="footer">
+                    <h4> About US</h4>
+                    <p> Team 4 website presentation</p>
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <p>Made by<i class="fa fa-heart-o"></i> team 3 </p> 
+                </section>
+                
+
+    </body>
+</html>
